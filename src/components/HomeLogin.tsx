@@ -1,6 +1,6 @@
 import {useState} from 'react'
-import { Button, Typography, Container, Grid, TextField, Input, ThemeProvider } from '@material-ui/core'
-import { makeStyles, Theme, createStyles, createTheme } from '@material-ui/core/styles'
+import { Button, Grid, TextField } from '@material-ui/core'
+import { makeStyles, Theme, createStyles } from '@material-ui/core/styles'
 
 export const HomeLogin = ( { onsubmit, handleOpen, defaultLogin }:any ) => {
 
@@ -33,12 +33,6 @@ export const HomeLogin = ( { onsubmit, handleOpen, defaultLogin }:any ) => {
   )
 
   const classes = useStyles();
-
-  // Intrerface
-  interface FormData {
-    user: string,
-    password: string,
-  }
 
   // validade form
   const validate = (e: { preventDefault: () => void }) => {

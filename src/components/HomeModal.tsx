@@ -1,15 +1,14 @@
-import React, {useState} from 'react';
-import { ThemeProvider, Modal, Fade, Backdrop } from '@material-ui/core';
-import { makeStyles, Theme, createStyles, createTheme } from '@material-ui/core/styles';
+import { Modal, Fade, Backdrop } from '@material-ui/core';
+import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 
 // interface sample 01
-interface Modal {
+interface ModalType {
     open: boolean,
     handleClose: (event: React.MouseEvent<HTMLButtonElement>) => void,
 }
 
 
-export const HomeModal = ({ open, handleClose }: Modal) => {
+export const HomeModal = ({ open, handleClose }: ModalType) => {
 
     // material CSS classes UI component style
     const useStyles = makeStyles((theme: Theme) =>

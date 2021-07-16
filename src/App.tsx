@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 //import { Base, TestA, InterfaceTestA, MapTestA, DefaultProps, Event, EventB, EventC } from './components/Base'
 //import Button from '@material-ui/core/Button';
 import { ThemeProvider } from '@material-ui/core';
-import { makeStyles, Theme, createStyles, createTheme } from '@material-ui/core/styles';
+import { createTheme } from '@material-ui/core/styles';
 
 // components
 import { Home } from './components/Home'

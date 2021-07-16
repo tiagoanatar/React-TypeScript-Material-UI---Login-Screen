@@ -1,6 +1,5 @@
 import {useState} from 'react'
-import { Button, Typography, Container, Grid, TextField, Input, ThemeProvider } from '@material-ui/core'
-import { makeStyles, Theme, createStyles, createTheme } from '@material-ui/core/styles'
+import { Typography, Container, Grid } from '@material-ui/core'
 
 // assets
 import logo from '../assets/logo-02.png';
@@ -17,7 +16,6 @@ export const Home = ({ setroute }:any) => {
 	const handleClose = () => { setOpen(false); }
 
 	// Login form state
-	const [login, setLogin] = useState({user: '', password: ''})
 	const defaultLogin = {user: 'test', password: 'test'}
 
 	const onSubmit = () => {
@@ -41,7 +39,7 @@ export const Home = ({ setroute }:any) => {
 
 					<Typography component='div' className='main-title-style'>
 						<h3>Welcome to</h3>
-						<img src={logo} width='200px' />
+						<img alt='logo' src={logo} width='200px' />
 					</Typography>
 
 					<HomeLogin onsubmit={onSubmit} handleOpen={handleOpen} defaultLogin={defaultLogin} />
